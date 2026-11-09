@@ -1,2 +1,3 @@
 *.csv
-data/
+data/cache_*.npz
+cache_*.npz
