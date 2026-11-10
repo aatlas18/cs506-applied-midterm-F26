@@ -14,7 +14,6 @@ from sklearn.metrics import classification_report
 warnings.filterwarnings("ignore", category=FutureWarning)
 start_time = time.time()
 
-
 # Settings
 use_ridge = True              # Add a numerical rating estimate
 fold_jobs = 3                 # Limit parallel jobs to manage memory
@@ -48,7 +47,6 @@ if os.path.exists("data/test.csv"):
 # Use consistent folds
 folds = list(StratifiedKFold(5, shuffle=True, random_state=0).split(train, y))
 
-
 def macro_f1(y_true, y_pred, n_classes=5):
     # Calc macro F1 during tuning
     confusion = np.bincount((y_true - 1) * n_classes + (y_pred - 1),
@@ -57,8 +55,6 @@ def macro_f1(y_true, y_pred, n_classes=5):
     precision = true_pos / np.maximum(confusion.sum(0), 1)
     recall = true_pos / np.maximum(confusion.sum(1), 1)
     return (2 * precision * recall / np.maximum(precision + recall, 1e-12)).mean()
-
-
 
 # Turn review text and summaries into TF-IDF
 tfidf_store = {}
