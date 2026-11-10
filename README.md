@@ -2,7 +2,7 @@
 
 This is the code and write up for the CS506 Applied Midterm, which strived to predict reviewer ratings (1-5) of music releases (albums, EPs, etc.), scored on macro F1.
 
-**Kaggle Username**:  asatlas18
+**Kaggle Username**:  aatlas18
 
 **Final Prediction Accuracy**: 
 0.57036 (30th Place)
