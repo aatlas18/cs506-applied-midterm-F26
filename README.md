@@ -2,7 +2,7 @@
 
 This is the code and write up for the CS506 Applied Midterm, which strived to predict reviewer ratings (1-5) of music releases (albums, EPs, etc.), scored on macro F1.
 
-**Kaggle Username**:  aatlas18
+**Kaggle Username**:  amandaatlas
 
 **Final Prediction Accuracy**: 
 0.57036 (30th Place)
@@ -120,6 +120,13 @@ The model performed best on 1-star and 5-star reviews, which makes sense because
 - Extra Trees added nothing: I expected blending two forests to help, but the blend search gave Extra Trees zero weight. A more different second model would likely blend better.
 - Overall, I think the model performed reasonably well, but there is still room for improvement, particularly in distinguishing between middle ratings. One question I would explore further is whether different text features or another model covered in class could improve these predictions. 
 - Open Questions: Could different text features or another model covered in class improve predictions, especially for middle ratings?
+
+## External Resources
+I used the scikit-learn libraries to better understand model parameters and implementation. The references below include the models and functions used in my code.
+
+Some additional methods I explored included Extra Trees, ordinal classification, stacking, out-of-fold target encoding, and class probability adjustments. I used these techniques to combine text predictions with reviewer, album, and artist statistics and improve macro F1, which were explained throughout the writeup. 
+
+I also used Claude and ChatGPT to help brainstorm features, debug code, and experiment with different modeling approaches. I reviewed and tested the suggestions, compared model performance, and made adjustments based on the results. All final code and experiments are included in this repository. 
 
 ## References
 1. Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, E. (2011). Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830.
